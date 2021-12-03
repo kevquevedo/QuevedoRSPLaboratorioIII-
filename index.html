@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/spinner.js"></script>
+    <script src="js/formulario.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>RSP - Kevin Quevedo</title>
+</head>
+<body>
+
+<div id="divTotal">
+    <h1 id="titulo">ABM VEHICULOS</h6>  
+</div>
+
+<div id="divSpinner">
+</div>
+
+<div id="divBotonAlta">
+    <!--Boton Alta.-->
+    <input type="button" value="ALTA DE VEHICULO" id="btnAlta" class="btnAlta">
+</div>
+
+<div id="divDatos" hidden = "true">
+
+    <!--Seccion ID.-->
+    <br>
+    <br>
+    <label for="txtId">ID: </label>
+    <input type="text" name="txtId" id="txtId" disabled = "disabled">
+    <br>
+    <br>
+    <!--Seccion Marca.-->
+    <label for="txtMarca">MARCA: </label>
+    <input type="text" name="txtMarca" id="txtMarca">
+    <br>
+    <br>
+    <!--Seccion Modelo.-->
+    <label for="txtModelo">MODELO: </label>
+    <input type="text" name="txtModelo" id="txtModelo">
+    <br>
+    <br>
+    <!--Seccion Precio.-->
+    <label for="txtPrecio">PRECIO: </label>
+    <input type="text" name="txtPrecio" id="txtPrecio">
+    <br>
+    <br>
+    <!--Seccion Tipo.-->
+    <label for="txtTipo">TIPO: </label>
+    <select id="sel_tipo">
+        <option id="Auto">Auto</option>
+        <option id="Camioneta">Camioneta</option>
+    </select> 
+    <br>
+    <br>
+    <!--Boton Agregar.-->
+    <input type="button" value="Agregar" id="btnAgregar" class="btnAgregar">
+    <!--Boton Cerrar.-->
+    <input type="button" value="Cerrar" id="btnCerrar" class="btnCerrar">
+</div>
+
+
+<div id="divFiltros">
+    <h1 id="titulo">FILTROS</h6>  
+</div>
+<div id="divFiltrosDatos">
+    <!--Promedio.-->
+    <label for="txtPromedio">PROMEDIO: </label>
+    <input type="text" name="txtPromedio" id="txtPromedio">
+    <input type="button" value="CALCULAR PROMEDIO" id="btnPromedio" class="btnPromedio">
+    <br>
+    <br>
+    <!--Filtrar Por.-->
+    <label for="txtPromedio">FILTRAR POR: </label>
+    <select id="sel_tipoVehiculo">
+        <option id="Todos">Todos</option>
+        <option id="Male">Auto</option>
+        <option id="Female">Camioneta</option>
+    </select> 
+    <br>
+    <br>
+    <!--Campos a mostrar.-->
+    <label id="camposMostrados">Campos Mostrados</label>
+    <label for="txtPromedio"> - Tildar los campos a mostrar</label>
+    <br><br>
+    <input type="checkbox" checked="true" id="chk_id">ID</input>
+    <input type="checkbox" checked="true" id="chk_marca">Marca</input>
+    <input type="checkbox" checked="true" id="chk_modelo">Modelo</input>
+    <input type="checkbox" checked="true" id="chk_precio">Precio</input>
+</div>
+
+<div id="divVehiculos">
+    <h1 id="titulo">LISTA DE VEHICULOS</h6>  <br><br><br><br>
+</div>
+<div id="divTabla">
+</div>
+
+</body>
+</html>
